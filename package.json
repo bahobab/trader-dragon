@@ -1,0 +1,16 @@
+{
+  "name": "dragonstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\" ",
+    "backend": "backend/bin/server",
+    "frontend": "parcel frontend/src/index.html",
+    "dev": "concurrently \"npm run backend-dev\" \"npm run frontend\"",
+    "backend-dev": "nodemon backend/bin/server"   
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
